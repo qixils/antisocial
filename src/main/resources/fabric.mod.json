@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "antisocial",
+  "version": "${version}",
+  "name": "Antisocial",
+  "description": "Adds a keybind to toggle the rendering of other players",
+  "authors": [
+    "qixils"
+  ],
+  "contact": {
+    "homepage": "https://github.com/qixils/antisocial",
+    "sources": "https://github.com/qixils/antisocial",
+    "issues": "https://github.com/qixils/antisocial/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/antisocial/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.qixils.antisocial.Antisocial"
+    ]
+  },
+  "mixins": [
+    "antisocial.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=1.19 <1.21-"
+  }
+}
